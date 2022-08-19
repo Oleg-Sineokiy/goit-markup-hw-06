@@ -1016,28 +1016,12 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  text-align: center;
-  margin-left: 14px;
-  text-align: center;
-  justify-content: center;
-}
-
 .user-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.check-text {
-  display: flex;
-  align-items: center;
 }
 
 .form-rules-text {
@@ -1057,11 +1041,64 @@ img {
   color: var(--accent-secondary-color);
 }
 
-.correction {
-  margin-left: 31px;
-}
-
 .submit:hover,
 .submit:focus {
   background-color: var(--accent-secondary-color);
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.modal-close-button {
+  display: flex;
+}
+
+.check {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.check .correct {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.check .correct:hover,
+.check .correct:focus {
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.icon {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-color);
+  box-sizing: border-box;
+}
+
+.checkbox:checked ~ .check .icon {
+  fill: var(--white-color);
+}
+
+.correction {
+  margin-left: 24px;
 }
