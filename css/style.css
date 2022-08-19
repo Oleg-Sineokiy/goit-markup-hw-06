@@ -543,8 +543,6 @@ img {
   padding-top: 27px;
   padding-bottom: 27px;
   bottom: 0;
-  /* left: 50%; */
-  /* transform: translate(-50%, 0); */
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -1057,6 +1055,17 @@ img {
   display: flex;
 }
 
+.modal-check {
+  margin-bottom: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 .check {
   font-weight: 400;
   font-size: 14px;
@@ -1068,14 +1077,16 @@ img {
 }
 
 .check .correct {
-  display: inline-block;
+  display: inline-flex;
   width: 16px;
   height: 15px;
   margin-right: 8px;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
 }
 
 .check .correct:hover,
@@ -1086,13 +1097,10 @@ img {
 }
 
 .icon {
-  display: flex;
-  width: 16px;
-  height: 15px;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  width: 13px;
+  height: 17px;
   fill: var(--white-color);
-  box-sizing: border-box;
 }
 
 .checkbox:checked ~ .check .icon {
