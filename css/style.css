@@ -1086,10 +1086,9 @@ img {
   align-items: flex-end;
 }
 
-.check .correct:hover,
-.check .correct:focus {
+.checkbox:checked + .check .correct {
+  fill: var(--white-color);
   background-color: var(--accent-color);
-  background-origin: border-box;
   border-color: var(--accent-color);
 }
 
@@ -1098,12 +1097,5 @@ img {
   width: 13px;
   height: 11px;
   fill: var(--white-color);
-}
-
-.checkbox:checked ~ .check .icon {
-  fill: var(--white-color);
-}
-
-.correction {
-  margin-left: 24px;
+  stroke: var(--white-color);
 }
