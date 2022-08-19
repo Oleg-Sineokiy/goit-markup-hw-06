@@ -1084,7 +1084,6 @@ img {
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
   align-items: flex-end;
-  top: 50%;
 }
 
 .check .correct:hover,
@@ -1097,7 +1096,7 @@ img {
 .icon {
   display: block;
   width: 13px;
-  height: 17px;
+  height: 11px;
   fill: var(--white-color);
 }
 
