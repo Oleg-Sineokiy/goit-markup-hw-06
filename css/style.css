@@ -1085,8 +1085,6 @@ img {
   border-radius: 4px;
   align-items: flex-end;
   top: 50%;
-  transform: translateY(-50%);
-  outline: none;
 }
 
 .check .correct:hover,
